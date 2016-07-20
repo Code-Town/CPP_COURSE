@@ -7,7 +7,7 @@ class Foo
 {
   int count;
   vector<int> vec;
-  
+
 
 public:
   Foo(int val)

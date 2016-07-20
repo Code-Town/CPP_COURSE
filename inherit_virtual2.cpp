@@ -44,7 +44,7 @@ int main()
 	IdealShape I(2);
 	I.draw(0,0);
 	Triangle(2).draw(0,0);
-	Square* S=(&Square(2)); // rvalue
+	Square* S= new Square(2); // rvalue
 	S->draw(0,0);
 	return 0;
 }

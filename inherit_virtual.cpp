@@ -1,8 +1,4 @@
 #include <iostream>
-#include <conio.h>
-#include <cstdlib>
-#include <math.h>
-
 // the code has errors.
 
 /* Point at -1;-0.57735
@@ -18,9 +14,8 @@ class IdealShape
 	protected:
 		double dimension;
     public:
-		
 		IdealShape(double _dim): dimension(_dim){};
-		virtual void draw (double x_center, double y_center) = 0;
+		virtual void draw (double x_center, double y_center) =0;
 		void setPoint(double x, double y)
 		{
 			std::cout<<"Point at "<<x<<";"<<y<<"\n";
@@ -59,10 +54,9 @@ int main()
 	Triangle(2).draw(0,0);
 	Square S(2);
 	S.draw(0,0);
-	IdealShape* I2 = new Square(2);
+	IdealShape * I2 = new Square(2);
 	I2->draw(0,0);
 	delete I2;
-	_getch();
 	return 0;
 	
 }
